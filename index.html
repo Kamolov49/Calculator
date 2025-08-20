@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Новая папка/style.css">
+</head>
+<body>
+    <div class="calculator-wrapper">
+  
+  <input id="result" type="text" class="display" value="" readonly>
+
+  <div class="container">
+  
+    <div class="advanced">
+      <button onclick="key('(')">(</button>
+      <button onclick="key(')')">)</button>
+      <button onclick="key(' ^2 ')">^2</button>
+      <button onclick="key(' ^3 ')">^3</button>
+      <button onclick="key(' √ ')">√</button>
+      <button onclick="key(' ∛ ')">∛</button>
+    </div>
+
+    
+    <div class="calculator">
+      <button onclick=" clearDisplay()" class="orange">AC</button>
+      <button onclick="deleteLast()" class="orange">DEL</button>
+      <button onclick="key(' / ')" class="orange">/</button>
+      <button onclick="key(' * ')" class="orange">*</button>
+
+      <button onclick="key(7)" class="gray">7</button>
+      <button onclick="key(8)" class="gray">8</button>
+      <button onclick="key(9)" class="gray">9</button>
+      <button onclick="key(' - ')" class="orange">-</button>
+
+      <button onclick="key(6)" class="gray">6</button>
+      <button onclick="key(5)" class="gray">5</button>
+      <button onclick="key(4)" class="gray">4</button>
+      <button onclick="key(' + ')" class="orange">+</button>
+
+      <button onclick="key(1)" class="gray">1</button>
+      <button onclick="key(2)"  class="gray">2</button>
+      <button onclick="key(3)" class="gray">3</button>
+      <button onclick="calculate('')" class="red">=</button>
+
+      <button onclick="key(0)" class="gray zero">0</button>
+      <button onclick="key('.')" class="gray">.</button>
+    </div>
+  </div>
+</div>
+<script src="/Новая папка/script.js"></script>
+</body>
+</html>
